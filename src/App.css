@@ -1,38 +1,119 @@
-.App {
+body {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Flag {
+  background-color: cornflowerblue;
+  display: block;
+  margin-left: 0.3%;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  float: left;
+  width: 25%;
+  height: 300px;
+  padding: 10px;
+  border: 2px solid black;
+  overflow: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Img {
+  background-color: cornflowerblue;
+  display: block;
+  margin-left: auto;
+  margin-right: 0.3%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  float: right;
+  width: 25%;
+  height: 300px;
+  padding: 10px;
+  border: 2px solid black;
+  overflow: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Holiday {
+  background-color: crimson;
+  display: block;
+  margin-left: 0.3%;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  float: left;
+  width: 25%;
+  height: 300px;
+  padding: 10px;
+  border: 2px solid black;
+  clear: both;
 }
 
-.App-link {
-  color: #61dafb;
+.Weather {
+  background-color: khaki;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 40%;
+  height: 100px;
+  padding: 10px;
+  border: 2px solid black;
+  clear: top;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Time {
+  background-color: aquamarine;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 40%;
+  height: 100px;
+  padding: 10px;
+  border: 2px solid black;
+  clear: top;
+}
+
+.Searchbar {
+  background-color: lightgray;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 25%;
+  height: 100px;
+  padding: 10px;
+  border: 2px solid black;
+  clear: top;
+}
+
+.Currency {
+  background-color: blueviolet;
+  display: block;
+  margin-left: auto;
+  margin-right: 0.3%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  float: right;
+  width: 25%;
+  height: 300px;
+  padding: 10px;
+  border: 2px solid black;
+  clear: right;
+}
+
+footer {
+  background-color: darkgray;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: 1%;
+  width: 97%;
+  height: 100px;
+  padding: 10px;
+  border: 2px solid black;
+  clear: both;
 }
