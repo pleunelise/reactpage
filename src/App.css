@@ -1,119 +1,94 @@
-body {
-  text-align: center;
-}
-
 .Flag {
   background-color: cornflowerblue;
-  display: block;
-  margin-left: 0.3%;
-  margin-right: auto;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  float: left;
-  width: 25%;
-  height: 300px;
-  padding: 10px;
+  grid-area: flag;
   border: 2px solid black;
   overflow: auto;
 }
 
-.Img {
-  background-color: cornflowerblue;
-  display: block;
-  margin-left: auto;
-  margin-right: 0.3%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  float: right;
-  width: 25%;
-  height: 300px;
-  padding: 10px;
-  border: 2px solid black;
-  overflow: auto;
-}
-
-.Holiday {
-  background-color: crimson;
-  display: block;
-  margin-left: 0.3%;
-  margin-right: auto;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  float: left;
-  width: 25%;
-  height: 300px;
-  padding: 10px;
-  border: 2px solid black;
-  clear: both;
-}
-
-.Weather {
-  background-color: khaki;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  width: 40%;
-  height: 100px;
-  padding: 10px;
-  border: 2px solid black;
-  clear: top;
-}
-
-.Time {
-  background-color: aquamarine;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  width: 40%;
-  height: 100px;
-  padding: 10px;
-  border: 2px solid black;
-  clear: top;
+.Flag img{
+  width: 60%;
+  height: auto;
 }
 
 .Searchbar {
-  background-color: lightgray;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  width: 25%;
-  height: 100px;
-  padding: 10px;
+  grid-area: searchbar;
+}
+/*
+.Img {
+  background-color: cornflowerblue;
+  grid-area: img;
   border: 2px solid black;
-  clear: top;
+  overflow: auto;
+}
+*/
+
+#achtergrond {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .Currency {
   background-color: blueviolet;
-  display: block;
-  margin-left: auto;
-  margin-right: 0.3%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  float: right;
-  width: 25%;
-  height: 300px;
-  padding: 10px;
+  grid-area: currency;
   border: 2px solid black;
-  clear: right;
+  /*
+  padding: 10px;
+  */
+  overflow: auto;
+}
+
+#first {
+  float: left;
+  width: 30%;
+}
+
+#second {
+  float: left;
+  width: 30%;
+}
+
+#third {
+  float: left;
+  width: 30%;
+}
+
+.Holiday {
+  background-color: crimson;
+  grid-area: holidays;
+  border: 2px solid black;
+}
+
+.Weather {
+  background-color: khaki;
+  grid-area: weather;
+  border: 2px solid black;
+}
+
+.Time {
+  background-color: aquamarine;
+  grid-area: time;
+  border: 2px solid black;
 }
 
 footer {
   background-color: darkgray;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10%;
-  margin-bottom: 1%;
-  width: 97%;
-  height: 100px;
-  padding: 10px;
+  grid-area: footer;
   border: 2px solid black;
-  clear: both;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'flag flag searchbar searchbar none none'
+    'holidays holidays weather weather currency currency'
+    'holidays holidays time time currency currency'
+    'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  /*
+  padding: 10px;
+  */
+  text-align: center;
 }
