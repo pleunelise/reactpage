@@ -1,7 +1,5 @@
 .Flag {
-  background-color: cornflowerblue;
   grid-area: flag;
-  border: 2px solid black;
   overflow: auto;
 }
 
@@ -14,6 +12,21 @@
   grid-area: searchbar;
   text-align: center;
   padding-top: 30vh;
+}
+
+.search{
+  border: 1px solid grey;
+  border-radius: 1px;
+  height: 25px;
+  width: 75%;
+  padding: 2px 23px 2px 30px;
+  outline: 0;
+  background-color: #f5f5f5;
+}
+
+.select{
+  width: 20%;
+  height: 50%;
 }
 /*
 .Img {
@@ -33,12 +46,11 @@
 }
 
 .Currency {
-  background-color: blueviolet;
+  background-color: lightgray;
+  opacity: 0.8;
+  font-weight: bold;
   grid-area: currency;
   border: 2px solid black;
-  /*
-  padding: 10px;
-  */
   overflow: auto;
 }
 
@@ -58,24 +70,28 @@
 }
 
 .Holiday {
-  background-color: crimson;
+  background-color: lightgray;
+  opacity: 0.8;
   grid-area: holidays;
   border: 2px solid black;
 }
 
 .Weather {
-  background-color: khaki;
+  background-color: lightgray;
+  opacity: 0.8;
   grid-area: weather;
   border: 2px solid black;
 }
 
 .Time {
-  background-color: aquamarine;
+  background-color: lightgray;
+  opacity: 0.8;
   grid-area: time;
   border: 2px solid black;
 }
 
 footer {
+  opacity: 0.8;
   background-color: darkgray;
   grid-area: footer;
   border: 2px solid black;
