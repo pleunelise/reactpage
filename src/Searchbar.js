@@ -1,28 +1,27 @@
 import React from 'react';
 
 class Searchbar extends React.Component{
-    /*constructor(props) {
+    constructor(props) {
         super(props);
 
         this.state = {
-            country: props.country,
+            /*country: props.country,*/
+            searchTerm: ''
         }
-        // console.log("props", props)
-        // console.log("currency code", cc.country(props.countryname)[0].code)
+        console.log("zoekopdracht: ", this.state.searchTerm)
     }
 
-    componentDidMount() {
-        fetch("https://api.exchangeratesapi.io/latest?base=")
-            .then(response => response.json())
-            .then(data=>{
-                console.log("got rates", data)
-                this.setState({rates: data.rates})
-            })
-    }*/
+    editSearchTerm = (e) => {
+        this.setState({searchTerm: e.target.value})
+    }
+
+    callBackMethod(){
+        this.props.sendData(this.state.searchTerm);
+    }
 
     render(){
         return (
-            <div className="Searchbar">
+            <div className="Searchbar" style={{textAlign: 'center', paddingTop: '30vh'}}>
                 <select name="select">
                     <option value="value1" selected>Africa</option>
                     <option value="value2">America</option>
@@ -34,14 +33,12 @@ class Searchbar extends React.Component{
                     <option value="value8">Indian</option>
                     <option value="value9">Pacific</option>
                 </select>
+                <input type='text' value={this.state.searchTerm} onChange={this.editSearchTerm} placeholder='Search for a country!'/>
             </div>
         )
 
     }
 
 }
-// GET https://api.exchangeratesapi.io/latest?symbols=USD,GBP HTTP/1.1
-// https://api.exchangeratesapi.io/latest?base= + this.state.currencycode
-// console.log(cc.country('colombia'));
 
 export default Searchbar;

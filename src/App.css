@@ -12,6 +12,8 @@
 
 .Searchbar {
   grid-area: searchbar;
+  text-align: center;
+  padding-top: 30vh;
 }
 /*
 .Img {

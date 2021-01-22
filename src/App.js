@@ -14,22 +14,27 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            country: "france"
+            country: "france",
+            searchTerm: {}
         }
             
+    }
+
+    getDatafromChild(val){
+        console.log(val);
     }
 
     render() {
         return (
             <div className="grid-container">
                 <Flag country={this.state.country}/>
-                <Searchbar country={this.state.country}/>
+                <Searchbar sendData={this.getDatafromChild}/>
                 <Img country={this.state.country}/>
                 <Holiday />
                 <Weather />
                 <Time country={this.state.country}/>
                 <Currency countryname={this.state.country}/>
-                <TheFooter />
+                <TheFooter countryname={this.state.country}/>
             </div>
         )
     }
