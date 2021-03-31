@@ -14,7 +14,7 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            country: "finland",
+            country: "china",
             searchTerm: {}
         }
             
@@ -28,7 +28,7 @@ class App extends React.Component {
         return (
             <div className="grid-container">
                 <Flag country={this.state.country}/>
-                <Searchbar sendData={this.getDatafromChild}/>
+                <Searchbar country={this.state.country} sendData={this.getDatafromChild}/>
                 <Img country={this.state.country}/>
                 <Holiday />
                 <Weather />

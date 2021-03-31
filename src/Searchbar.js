@@ -5,7 +5,7 @@ class Searchbar extends React.Component{
         super(props);
 
         this.state = {
-            /*country: props.country,*/
+            country: props.country,
             searchTerm: ''
         }
         console.log("zoekopdracht: ", this.state.searchTerm)
@@ -34,7 +34,7 @@ class Searchbar extends React.Component{
                     <option value="value8">Indian</option>
                     <option value="value9">Pacific</option>
                 </select>
-                <input type='text' className='search' value={this.state.searchTerm} onChange={this.editSearchTerm} placeholder='Search for a country!'/>
+                <input type='text' className='search' value={this.state.searchTerm} onChange={this.editSearchTerm} placeholder={this.state.country}/>
             </div>
         )
 
